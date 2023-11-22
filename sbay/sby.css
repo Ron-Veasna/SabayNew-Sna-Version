@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanuman', serif;
+}
+.Topbar{
+    width: 100%;
+    background-color: rgb(22,22,22);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.logobar{
+    width: 62%;
+    display: flex;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 37%;
+    margin-left: 23px;
+}
+.adsTop{
+    width: 75%;
+    display: flex;
+    justify-content: right;
+}
+.adsTop img{
+    width: 100%;
+}
+.secbar{
+    width: 100%;
+    background-color: #fa1939;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.menu{
+    width: 58%;
+}
+.menu ul{
+   display: flex; 
+}
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu a{
+    padding: 11px;
+    color: #fed1d7;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: white;
+}
+.menu1 a:hover{
+    background-color:  #d90c16;
+}
+.third{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+    width: 58%;
+
+}
+.imgbox{
+    width: 100%;
+    margin-top: 15px;
+}
+.imgbox img{
+    width: 100%;
+object-fit: cover;
+}
+.info1{
+    width: 100%;
+    height: 507px;
+    display: flex;
+    margin-top: 6px;
+}
+.infoP1{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoP2{
+    width: 29%;
+    height: 100%;
+    margin-left: 1%;
+}
+.infoB1{
+    width: 60%;
+    background-color: blue;
+    height: 50%;
+    position: relative;
+    transition: 0.6s;
+}
+.infoB1::before, .infoB2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.199);
+    transition: 0.6s;
+}
+.timeinfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    padding: 20px;
+    color: white;
+}
+.tt-info{
+    position: absolute;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    top: 11px;
+    padding-right: 30px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.tt-info3{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    padding: 8px 15px;
+    transition: 0.6s;
+}
+.tt-info3 p{
+    visibility: hidden;
+}
+.infoB2:hover .tt-info3 p{
+    visibility: visible;
+}
+.infoB2:hover .tt-info3{
+    bottom: 45px;
+}
+.infoB2:hover .tt-info3 h1{
+    color: red;
+}
+.tt-info3 h1{
+    font-size: 20px;
+}
+.tt-info3 p{
+    font-size: 15px;
+}
+.tt-info2{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    padding: 8px 15px;
+    transition: 0.6s;
+}
+.tt-info2 p{
+    visibility: hidden;
+}
+.infoB1:hover .tt-info2 p{
+    visibility: visible;
+}
+.infoB1:hover .tt-info2{
+    bottom: 40px;
+}
+.infoB1:hover .tt-info2 h1{
+    color: red;
+}
+.tt-info2 h1{
+    font-size: 22px;
+}
+.infoB1:hover::before, .infoB2:hover::before{
+    transition: 0.4s;
+     background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(240, 240, 240, 0));
+}
+.infoB1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.infoB2{
+    width: 40%;
+    height: 50%;
+    position: relative;
+    transition: 0.6s;
+    background-color: pink;
+}
+.infoB2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.infoA1{
+    width: 100%;
+    height: 49%;
+    background-color: red;
+}
+.infoA1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.infoA2{
+    margin-top: 3%;
+    width: 100%;
+    height: 49%;
+    background-color: blue;
+}
+.infoA2 iframe{
+    width: 100%;
+    height: 100%;
+}
+.txtbar{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 2px solid red;
+}
+.txtbar h1{
+    color: white;
+  
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 10%;
+       background-color: red;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+}
+.boxinfo{
+    background-color: white;
+    width: 100%;
+    height: 624px;
+    box-shadow: 1px 1px 3px 0 dimgrey;
+    padding: 18px 33px 0px 33px;
+}
+.boxGinfo{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.boxf{
+    width: 100%;
+    height: 264px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxf1{
+    width: 33.2%;
+    height: 100%;
+}
+.boxf1a{
+    width: 100%;
+    height: 70%;
+
+}
+.boxf1a img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.boxf1b{
+    width: 100%;
+    height: 30%;
+
+}
+.boxf1b h1{
+    padding-top: 12px;
+    font-size: 13px;
+}
+.boxf2{
+    width: 748px;
+    height:341px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.boxs{
+    width: 164px;
+    height: 167px;
+}
+.boxs1{
+    width: 100%;
+    height: 50%;
+
+}
+.boxs1 img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.boxs2{
+    width: 100%;
+    height: 50%;
+}
+.boxs2 p{
+    font-size: 13px;
+}
+.boxf3{
+    margin-left: 20px;
+    width: 269px;
+    height:341px;   
+}
+.boxl1{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 18px;
+}
+.boxl1 img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.lastbox{
+    width: 100%;
+    height: 382px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px 0 dimgrey;
+}
+.Lbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.boxy{
+    width: 348px;
+    height: 100%;
+    background-color: red;
+}
+.pic1{
+    width: 100%;
+    height: 55%;
+}
+.pic1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text1{
+    width: 100%;
+    height: 45%;
+    background-color: #fa5480;
+}
+.text1 h1{
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+    box-sizing: border-box;
+}
+.boxx{
+    width: 695.5px;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxc{
+    width: 164.5px;
+    height: 168px;
+}
+.pic2{
+    width: 100%;
+    height: 55%;
+}
+.pic2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text2{
+    width: 100%;
+    height: 45%;
+}
+.text2 p{
+    margin-top: 5px;
+    font-size: 13px;
+}
+.imglast{
+    width: 100%;
+    margin-top: 70px;
+    height: 255px;
+}
+.imglast img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
